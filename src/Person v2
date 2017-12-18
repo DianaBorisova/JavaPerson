@@ -20,11 +20,11 @@ public class Person {
     }
 
     public boolean divorce() {
-        if (spouse != null) return false;
+        if (spouse == null) return false;
 
         spouse.spouse = null;
         spouse = null;
 
         return true;
         }
-        }
+}
